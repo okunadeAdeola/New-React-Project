@@ -1,0 +1,202 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap');
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EDDCD9;
+  margin-top: 5%;
+  height: 450px;
+  width: 450px;
+  border: 2px solid #264143;
+  border-radius: 20px;
+  box-shadow: 3px 4px 0px 1px #E99F4C;
+}
+
+.title {
+  color: #264143;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.sub_title {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 10px;
+}
+
+.form_style {
+  outline: none;
+  border: 2px solid #264143;
+  box-shadow: 3px 4px 0px 1px #E99F4C;
+  width: 290px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.form_style:focus, .btn:focus {
+  transform: translateY(4px);
+  box-shadow: 1px 2px 0px 0px #E99F4C;
+}
+
+.btn {
+  padding: 15px;
+  margin: 25px 0px;
+  width: 290px;
+  font-size: 15px;
+  background: #DE5499;
+  border-radius: 10px;
+  font-weight: 800;
+  box-shadow: 3px 3px 0px 0px #E99F4C;
+}
+
+.btn:hover {
+  opacity: .9;
+}
+
+.link {
+  font-weight: 800;
+  color: #264143;
+  padding: 5px;
+}
+.background{
+    background-image: url(./assets/image.jpg);
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+::placeholder{
+    color: rgb(112, 216, 147);
+    font-weight: bold;
+}
+body{
+  font-family: 'Courier New', Courier, monospace;
+}
+/* styles.css */
+.message {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.message.show {
+    opacity: 1;
+}
+/* Add these styles to your CSS file */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+  }
+  
+  .page-link {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .page-link:hover {
+    background-color: #eee;
+  }
+  
+  .active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .previous,
+  .next {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .previous:hover,
+  .next:hover {
+    background-color: #eee;
+  }
+  .card{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 60px 15px;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+.landimage{
+    width: 45%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.typingcss::before {
+  content: 'Smart Watch';
+  color: #007bff;
+  animation: animate 9s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes animate {
+  0% {
+    content: 'Smart Watch';
+  }
+  20% {
+    content: 'Clothe';
+  }
+  40% {
+    content: 'Album';
+  }
+  60% {
+    content: 'Sneakers';
+  }
+  80% {
+    content: 'Smart Watch';
+  }
+  100% {
+    content: 'Clothe';
+  }
+}
+
